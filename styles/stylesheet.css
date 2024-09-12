@@ -1,0 +1,75 @@
+body{
+background-color: rgb(213, 244, 244);
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+.main{
+  background: rgb(214,219,219);
+background: radial-gradient(circle, rgba(214,219,219,1) 15%, rgba(147,147,147,1) 82%);
+padding: 20px;
+border-radius: 10px;
+
+}
+#display{
+  color: rgb(61, 59, 59);;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  width: 90%;
+  font-size:25px;
+  font-weight: bold;
+ 
+  
+
+}
+.keys{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+gap: 5px;
+
+}
+button{
+  border-radius: 5px;
+  padding: 5px 20px;
+  background-color: rgb(9, 138, 138);
+  color: aliceblue;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  background-image: linear-gradient(bottom, rgb(9, 138, 138)(100,170,30) 0%, rgb(3,77,77) 100%);
+	box-shadow: inset 0px 1px 0px rgb(9, 138, 138), 0px 6px 0px rgb(3, 77, 77);
+	border-radius: 5px;
+  font-size:25px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 5px;
+  
+}
+button:hover{
+  background-color: rgb(13, 167, 167);
+}
+button:active{
+  top:7px;
+	background-image: linear-gradient(bottom, rgb(9, 138, 138) 100%, rgb(3,77,77) 0%);
+	box-shadow: inset 0px 1px 0px #b2f17f, inset 0px -1px 0px #3d6f0d;
+	color: white;
+	text-shadow: 0px 1px 1px rgba(255,255,255,0.3);
+	background: rgb(10, 104, 104);;
+}
+.changeColorButton{
+  background-color: rgb(61, 59, 59);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  background-image: linear-gradient(bottom, rgb(61, 59, 59)(100,170,30) 0%, rgb(3,77,77) 100%);
+	box-shadow: inset 0px 1px 0px rgb(61, 59, 59), 0px 6px 0px rgb(93, 93, 93);
+	border-radius: 5px;
+}
+.changeColorButton:hover{
+  background-color: rgb(124, 123, 123);
+}
+footer{
+  position: absolute;
+  right: 0;
+  bottom: 0; 
+  margin: 10px;
+  font-style: italic;
+}
